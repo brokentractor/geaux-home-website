@@ -3,3 +3,6 @@
 /review/
 .DS_Store
 Thumbs.db
+
+# Local notes (DNS backup, etc.). Never published.
+/_private/
