@@ -1,0 +1,261 @@
+/* Geaux Home's editorial design layer. */
+:root {
+  --ink: #252923;
+  --gold: #a38d58;
+  --gold-dark: #776239;
+  --paper: #f4f1e9;
+  --line: #dcdccf;
+}
+body { background:#fcfbf7; }
+h1,h2 { font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.04em; }
+.header { background:#252923; }
+.nav { height:84px; }
+.nav-links { gap:27px; }
+.nav-links a { font-size:11px; letter-spacing:.11em; }
+.brand-name { font-size:12px; }
+.button { min-height:46px; border-radius:0; }
+.section { padding:92px 0; }
+.section-heading h2 { line-height:1.15; }
+.page-header { background:#f4f1e9; padding:65px 0 60px; }
+.page-header h1 { line-height:1.08; }
+.launch-header { background:#2d3027; }
+.boutique-hero { display:grid; grid-template-columns:1fr 1fr; min-height:610px; background:#252923; color:#fff; }
+.hero-copy { padding:65px clamp(28px,5vw,90px); display:flex; flex-direction:column; align-items:flex-start; justify-content:center; }
+.hero-copy .eyebrow { color:#cfbb8b; font-size:10px; letter-spacing:.22em; margin-bottom:25px; }
+.hero-copy h1 { font-size:clamp(58px,6.4vw,100px); line-height:1.03; letter-spacing:-.05em; }
+.hero-copy h1 em { color:#e0cfaa; font-weight:400; white-space:nowrap; }
+.hero-description { color:#dfdfd1; font-size:16px; line-height:1.75; margin-top:26px; }
+.hero-copy .hero-search { margin:32px 0 0; width:100%; max-width:560px; padding:6px; box-shadow:none; }
+.hero-copy .hero-search label { display:flex; min-width:0; }
+.hero-copy .hero-search input { padding:10px 12px; font-size:12px; min-width:0; }
+.hero-copy .hero-search button { padding:11px 17px; font-size:12px; letter-spacing:.02em; min-height:44px; }
+.hero-secondary { margin-top:18px; font-size:12px; color:#e5d6b5; }
+.hero-copy .search-note { margin-top:22px; color:#b9beb2; text-shadow:none; font-size:10px; line-height:1.7; }
+.hero-photo { position:relative; min-width:0; overflow:hidden; }
+.hero-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:49% center; }
+.hero-photo:after { content:''; position:absolute; inset:50% 0 0; background:linear-gradient(0deg,#1a211c65,transparent); pointer-events:none; }
+.photo-caption { position:absolute; z-index:1; left:35px; bottom:29px; font-family:Georgia,serif; font-size:20px; font-style:italic; color:#fff; text-shadow:0 1px 8px #0007; }
+.journey-nav { display:grid; grid-template-columns:repeat(3,1fr); padding:28px 0; border-bottom:1px solid var(--line); }
+.journey-nav>a { display:flex; gap:21px; align-items:center; text-decoration:none; padding:8px 30px; border-left:1px solid var(--line); font-family:Georgia,serif; font-size:22px; line-height:1.3; }
+.journey-nav>a:first-child { padding-left:0; border-left:0; }
+.journey-nav>a:last-child { padding-right:0; }
+.journey-nav>a>span:last-child { margin-left:auto; color:var(--gold-dark); font:20px Arial,sans-serif; }
+.journey-number { font:11px Arial,sans-serif; color:var(--gold-dark); letter-spacing:.1em; }
+.journey-nav small { display:block; font:11px/1.7 Arial,sans-serif; margin-top:6px; color:var(--muted); }
+.journey-nav a:hover { color:var(--gold-dark); }
+.intro-layout { grid-template-columns:1.4fr .75fr; gap:95px; }
+.intro-copy h2 { font-size:43px; }
+.intro-copy p:not(.eyebrow) { font-size:15px; line-height:1.85; }
+.portrait { object-position:center 42%; }
+.service { background:#f3f0e8; padding:44px; border-top:1px solid var(--gold); }
+.service h2 { font-size:35px; }
+.service .tradition-link { font-size:11px; margin-top:14px; text-transform:none; letter-spacing:.02em; color:var(--gold-dark); }
+.people-section { border-top:1px solid var(--line); }
+.people-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px; }
+.person-card { display:flex; flex-direction:column; min-width:0; }
+.person-photo { display:block; height:390px; overflow:hidden; background:#e9e6dd; }
+.person-photo img { width:100%; height:100%; object-fit:cover; object-position:center 46%; }
+.jody-photo img { object-position:center 32%; }
+.person-info { padding:26px 0 10px; display:flex; flex-direction:column; flex:1; }
+.person-info .eyebrow { margin-bottom:12px; font-size:10px; min-height:1.75em; }
+.person-info h3 { font-family:Georgia,serif; font-size:31px; font-weight:400; }
+.person-info h3 a { text-decoration:none; }
+.person-info>p:not(.eyebrow) { color:var(--muted); font-size:14px; max-width:440px; margin-top:14px; }
+.person-actions { display:flex; gap:23px; flex-wrap:wrap; margin-top:22px; font-size:12px; }
+.person-actions a { min-height:34px; display:flex; align-items:center; }
+.person-actions a:first-child { color:var(--gold-dark); }
+.agent-layout { display:grid; grid-template-columns:360px 1fr; gap:85px; align-items:start; }
+.agent-contact-card { border:1px solid var(--line); background:#f4f1e9; }
+.agent-contact-card>img { display:block; width:100%; height:390px; object-fit:cover; object-position:center 35%; }
+.agent-contact-details { padding:29px; }
+.agent-contact-details .eyebrow { font-size:10px; margin-bottom:15px; }
+.agent-phone { display:block; font-family:Georgia,serif; font-size:25px; text-decoration:none; }
+.agent-email { display:block; font-size:13px; overflow-wrap:anywhere; margin-top:8px; }
+.agent-contact-details .button-row { gap:10px; margin-top:23px; }
+.agent-contact-details .button { padding:11px 17px; font-size:10px; }
+.agent-bio h2 { font-size:40px; margin:0 0 25px; }
+.agent-bio .eyebrow { font-size:10px; }
+.agent-bio>p:not(.eyebrow) { font-size:15px; }
+.agent-bio .fine-print { font-size:11px!important; margin-top:30px; }
+.agent-details { display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; }
+.agent-details span { border:1px solid #c8c9b8; color:#6e715f; padding:5px 10px; font-size:10px; }
+.saber-section { background:#242921; color:#fff; padding:90px 0; }
+.saber-layout { display:grid; grid-template-columns:1.1fr .8fr; gap:90px; align-items:center; max-width:1020px; }
+.saber-copy .eyebrow { color:#d1b77c; font-size:10px; }
+.saber-copy h2 { font-size:clamp(55px,6vw,80px); line-height:1.02; margin-bottom:28px; }
+.saber-copy h2 em { color:#e0cfaa; font-weight:400; }
+.saber-copy>p:not(.eyebrow) { color:#d7dccc; font-size:15px; line-height:1.9; }
+.saber-copy .saber-signature { color:#e4d1a7!important; font-family:Georgia,serif; font-size:23px!important; font-style:italic; margin-top:25px; }
+.saber-copy .button { font-size:10px; padding:14px 20px; }
+.reel-card { width:min(100%,360px); justify-self:center; }
+.reel-shell { position:relative; aspect-ratio:9/16; background:#11140f; border:1px solid #b8a27080; box-shadow:0 20px 45px #0002; overflow:hidden; }
+.reel-shell video { width:100%; height:100%; display:block; position:absolute; inset:0; }
+.reel-fallback { display:block; text-align:center; font-size:11px; color:#e1ce9f; padding-top:18px; }
+.contact-info .button-row { margin-top:22px; }
+@media(min-width:1600px) {
+  .boutique-hero { min-height:700px; }
+  .hero-copy { padding-left:max(70px,calc((100vw - 1380px)/2)); }
+}
+@media(max-width:1150px) {
+  .nav-links { gap:22px; }
+  .hero-copy { padding:55px 35px; }
+  .hero-copy h1 { font-size:72px; }
+  .journey-nav>a { padding:8px 20px; gap:14px; font-size:20px; }
+  .intro-layout { gap:55px; }
+  .agent-layout { grid-template-columns:310px 1fr; gap:50px; }
+  .saber-layout { gap:55px; }
+}
+@media(max-width:900px) {
+  .boutique-hero { min-height:560px; }
+  .hero-copy { padding:45px 28px; }
+  .hero-copy h1 { font-size:59px; }
+  .hero-copy .hero-search { flex-direction:column; padding:6px; }
+  .hero-copy .hero-search input { padding:12px; }
+  .hero-copy .hero-search button { width:100%; }
+  .hero-description { font-size:14px; }
+  .journey-nav>a { font-size:18px; gap:12px; }
+  .journey-nav small { font-size:10px; }
+  .journey-number { display:none; }
+  .section { padding:65px 0; }
+  .intro-layout { gap:35px; }
+  .intro-copy h2 { font-size:35px; }
+  .person-photo { height:330px; }
+  .people-grid { gap:30px; }
+  .agent-layout { grid-template-columns:280px 1fr; gap:35px; }
+  .agent-contact-card>img { height:330px; }
+  .agent-contact-details { padding:22px; }
+  .agent-bio h2 { font-size:33px; }
+  .saber-layout { gap:35px; }
+  .saber-copy .button { font-size:9px; }
+}
+@media(max-width:700px) {
+  .nav { height:74px; }
+  .nav-links { top:74px; }
+  .boutique-hero { grid-template-columns:1fr; min-height:0; }
+  .hero-copy { padding:44px 24px 32px; }
+  .hero-copy h1 { font-size:clamp(58px,14vw,78px); }
+  .hero-copy .eyebrow { margin-bottom:21px; }
+  .hero-description { font-size:14px; margin-top:22px; }
+  .hero-copy .hero-search { flex-direction:row; max-width:500px; margin-top:25px; }
+  .hero-copy .hero-search input { font-size:11px; padding:10px 8px; }
+  .hero-copy .hero-search button { width:auto; padding:10px 14px; font-size:11px; }
+  .hero-secondary { margin-top:15px; font-size:11px; }
+  .hero-copy .search-note { font-size:9px; margin-top:17px; }
+  .hero-photo { height:265px; }
+  .hero-photo img { object-position:center 50%; }
+  .photo-caption { bottom:19px; left:24px; font-size:19px; }
+  .journey-nav { width:calc(100% - 38px); padding:20px 0; gap:0; }
+  .journey-nav>a { font-size:16px; padding:4px 13px; line-height:1.3; }
+  .journey-nav>a>span:last-child { display:none; }
+  .journey-nav small { display:none; }
+  .intro-layout { grid-template-columns:1fr; gap:35px; }
+  .intro-copy h2 { font-size:34px; }
+  .section { padding:48px 0; }
+  .page-header { padding:40px 0; }
+  .people-grid { grid-template-columns:1fr; gap:38px; }
+  .person-photo { height:auto; aspect-ratio:1.1; }
+  .person-info { padding-top:22px; }
+  .person-info h3 { font-size:30px; }
+  .person-info>p:not(.eyebrow) { font-size:13px; }
+  .person-actions { gap:25px; margin-top:16px; }
+  .agent-layout { grid-template-columns:1fr; gap:38px; }
+  .agent-contact-card { max-width:420px; }
+  .agent-contact-card>img { height:370px; }
+  .agent-contact-details { padding:25px; }
+  .agent-bio h2 { font-size:34px; }
+  .saber-section { padding:50px 0; }
+  .saber-layout { grid-template-columns:1fr; gap:38px; }
+  .saber-copy h2 { font-size:67px; }
+  .saber-copy>p:not(.eyebrow) { font-size:14px; }
+  .saber-copy .button { font-size:10px; }
+  .reel-card { width:min(100%,340px); }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+}
+
+/* Kevin uses an intentional monogram until his approved headshot is supplied. */
+.kevin-monogram { display:flex; flex-direction:column; justify-content:center; align-items:center; text-decoration:none; background:radial-gradient(ellipse at top right,#45483b,#242922 65%); color:#d7c38c; position:relative; }
+.kevin-monogram::before { content:""; position:absolute; inset:22px; border:1px solid #d7c38c55; pointer-events:none; }
+.monogram-mark { font:normal 90px/1 Georgia,serif; letter-spacing:-.06em; }
+.monogram-caption { margin-top:26px; font-size:10px; letter-spacing:.22em; text-transform:uppercase; }
+.agent-monogram { height:390px; }
+.kevin-specialties { margin-top:32px; }
+.kevin-specialties section { padding:24px 0; border-top:1px solid var(--line); }
+.kevin-specialties h3 { font-family:Georgia,serif; font-size:26px; margin:10px 0 12px; }
+.kevin-specialties p:not(.eyebrow) { font-size:15px; }
+@media(min-width:701px) and (max-width:1000px) { .person-info h3 {font-size:27px;} .person-actions {gap:13px;} }
+@media(max-width:700px) { .agent-monogram {height:300px;} }
+
+/* Coordinated portrait framing; Jody retains his original environmental photo. */
+.person-photo {height:auto;aspect-ratio:4/5;flex:none;}
+.lacy-photo img,.kevin-photo img {object-position:center;}
+.agent-contact-card>img.kevin-profile-photo {height:auto;aspect-ratio:4/5;object-position:center;}
+
+/* Brokerage identity stays readable and visible across advertising pages. */
+.brokerage-disclosure {background:#f0ece2;color:#292c24;padding:10px max(24px,calc((100% - 1160px)/2));font:14px/1.65 Arial,sans-serif;display:flex;justify-content:space-between;gap:4px 22px;flex-wrap:wrap;border-bottom:1px solid #ded8c8;}
+.brokerage-disclosure a {white-space:nowrap;color:inherit;}
+.brokerage-identity .footer-brand {font-size:24px;line-height:1.25;}
+.footer .brokerage-identity p,.footer .brokerage-identity a {font-size:14px;line-height:1.8;}
+@media(max-width:700px) {.brokerage-disclosure {padding:10px 20px;font-size:13px;} .brokerage-identity .footer-brand {font-size:24px;}}
+
+/* Keep role, name, copy and actions aligned when descriptions wrap differently. */
+.person-info>.person-actions {margin-top:auto;padding-top:22px;}
+
+/* A shared invitation on Buy and Sell gives the whole brokerage a voice. */
+.team-summary {scroll-margin-top:115px;align-self:start;min-width:0;background:#252a21;color:#faf8f1;padding:32px 30px 28px;border-top:3px solid #b8a16b;}
+.team-summary-logo {display:block;width:68px;height:68px;object-fit:contain;margin-bottom:30px;}
+.team-summary>.eyebrow {color:#d4c08c;font-size:10px;line-height:1.8;letter-spacing:.16em;margin-bottom:20px;}
+.team-summary h2 {font:normal clamp(31px,2.65vw,38px)/1.13 Georgia,serif;letter-spacing:-.035em;margin:0 0 22px;}
+.team-summary h2 em {font-weight:normal;color:#e0cf9f;}
+.team-summary-copy {font-size:14px;line-height:1.8;color:#e0e2d9;}
+.team-summary-actions {display:flex;flex-direction:column;align-items:stretch;gap:22px;margin-top:28px;}
+.team-summary-actions>.button {padding:16px 12px;font-size:10px;letter-spacing:.08em;text-align:center;}
+.team-summary-link {display:flex;align-items:center;justify-content:space-between;padding-bottom:12px;border-bottom:1px solid #b8a16b70;text-decoration:none;font-size:12px;letter-spacing:.06em;text-transform:uppercase;}
+.team-summary-link span {font-size:19px;color:#d4c08c;}
+.team-summary-note {font-size:12px;line-height:1.75;color:#c3c7ba;margin-top:22px;}
+@media(max-width:900px) {.content-grid>.team-summary {width:100%;max-width:100%;padding:30px;} .team-summary h2 {font-size:36px;} .team-summary-actions {max-width:340px;}}
+@media(prefers-reduced-motion:no-preference) {.team-summary-link {transition:color .2s;} .team-summary-link:hover {color:#e0cf9f;}}
+
+/* A consistent, team-voiced invitation on individual agent profiles. */
+.agent-contact-details .profile-contact-heading,.agent-summary .profile-contact-heading {font:normal 1.5rem/1.3 Georgia,serif;margin:0 0 16px;}
+.agent-summary .profile-contact-heading {margin-top:26px;}
+.agent-contact-details .agent-routing-note,.agent-summary .agent-routing-note {font-size:1rem;line-height:1.65;}
+.agent-contact-details .button-row .button,.agent-summary .button-row .button {font-size:.875rem;letter-spacing:.04em;}
+.agent-summary .button-row {gap:10px;margin-top:20px;}
+
+/* Priority neighborhoods: editorial features without unrelated stock photography. */
+.neighborhood-focus {border-top:1px solid var(--line);}
+.neighborhood-focus .section-heading {align-items:end;}
+.neighborhood-focus .section-heading h2 {font-size:clamp(2rem,4vw,3.25rem);line-height:1.12;}
+.neighborhood-focus h2 em {color:var(--gold-dark);font-weight:normal;}
+.neighborhood-focus-intro {max-width:400px;font-size:1rem;line-height:1.75;color:var(--muted);}
+.neighborhood-focus-grid {display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+.neighborhood-focus-card {display:flex;flex-direction:column;align-items:start;min-width:0;padding:42px;border-top:3px solid var(--gold);}
+.neighborhood-focus-card h3 {font:normal clamp(2rem,3.2vw,2.75rem)/1.15 Georgia,serif;margin:14px 0 22px;}
+.neighborhood-focus-card p:not(.eyebrow) {font-size:1rem;line-height:1.8;margin-bottom:28px;}
+.neighborhood-focus-card>.button {margin-top:auto;font-size:.875rem;letter-spacing:.03em;white-space:normal;text-align:center;}
+.capital-focus {background:#252a21;color:#faf8f1;}
+.capital-focus>.eyebrow {color:#d4c08c;}
+.southdowns-focus {background:var(--paper);color:var(--ink);}
+.neighborhood-advisor {align-self:start;border:1px solid var(--line);padding:30px;background:var(--paper);}
+.neighborhood-advisor h3 {font:normal 1.9rem/1.2 Georgia,serif;margin:15px 0 20px;}
+.neighborhood-advisor p {font-size:1rem;line-height:1.75;}
+.neighborhood-advisor .button-row {gap:12px;}
+.neighborhood-advisor .button {font-size:.875rem;letter-spacing:.03em;}
+.neighborhood-advisor .neighborhood-advisor-note {margin-top:22px;font-size:.875rem;color:var(--muted);}
+.doiron-history {margin:32px 0;padding:28px;border-left:3px solid var(--gold);background:var(--paper);}
+.doiron-history h3 {font:normal 1.75rem/1.25 Georgia,serif;margin:12px 0 18px;}
+.doiron-history p {font-size:1rem;line-height:1.8;}
+.doiron-history .history-source {font-size:.875rem;color:var(--muted);}
+.doiron-history .button {font-size:.875rem;letter-spacing:.03em;white-space:normal;}
+.local-news-feature {border-top:1px solid var(--line);background:var(--paper);}
+.local-news-layout {display:grid;grid-template-columns:1fr 1.1fr;gap:65px;}
+.local-news-layout h2 {font:normal clamp(2rem,3.2vw,2.75rem)/1.2 Georgia,serif;margin-top:18px;}
+.local-news-layout p {font-size:1rem;line-height:1.8;}
+.local-news-layout .local-news-context {font-size:.875rem;color:var(--muted);}
+.local-news-layout .button {font-size:.875rem;letter-spacing:.03em;}
+@media(max-width:700px) {.neighborhood-focus-grid,.local-news-layout {grid-template-columns:1fr;gap:24px;} .neighborhood-focus-card {padding:28px;} .neighborhood-focus .section-heading {align-items:start;} .doiron-history {padding:22px;} .neighborhood-advisor {padding:25px;}}
+
+/* Search clarity and personal contact use the existing boutique typography. */
+.brokerage-pronunciation{margin:22px 0}.journey-intro{padding:0 0 22px;border-bottom:1px solid var(--line);margin-bottom:25px}.journey-intro a{text-underline-offset:3px}.human-connection{max-width:650px;margin:20px 0}.human-connection h3{font-family:Georgia,serif;font-size:clamp(23px,3vw,29px);line-height:1.25;margin:0 0 12px}.human-connection p,.cta-band .human-connection p{font-size:16px;line-height:1.7;margin:0}.contact-grid .human-connection{padding:0 0 22px}.local-context{margin-bottom:30px}.field label,.field>span{font-size:14px;letter-spacing:.04em}.fine-print,.note{font-size:14px}.field input,.field select,.field textarea{font-size:16px}.office-contact-actions .button{min-height:44px}.human-connection a:focus-visible,.journey-intro a:focus-visible{outline:3px solid #9c762c;outline-offset:4px}@media(max-width:700px){.cta-band .button-row{display:flex;flex-wrap:wrap;gap:12px}.cta-band .button-row .button{margin-top:8px}.brokerage-disclosure{font-size:14px}.prose p{font-size:16px}.human-connection p{font-size:16px}.journey-intro{line-height:1.7}}
