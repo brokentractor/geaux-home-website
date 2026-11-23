@@ -16,11 +16,12 @@ Broken Tractor (Michael) manages the site for Lacy; she does not have GitHub or 
 - No build step. Pages are `*/index.html`; shared files are in `assets/`.
 
 ## Before launch (target Tue Dec 8, 2026)
-- [x] Contact form sends through Netlify Forms (form name `contact`)
+- [x] Forms send through Netlify Forms: `contact`, `wish-list`, `home-value`, `market-report`. Nothing a visitor types goes into the page address.
 - [x] Netlify form detection on
-- [ ] Launch day: add a form email notification to lacy@geauxhomerealestate.com (she clicks Confirm), remove the test notification to Michael
-- [ ] Property search: embed Flexmls IDX SmartFrame (registration off) after ROAM/GBRAR approval. Spot is marked in search/advanced_search/. Also update the area pages, /featured/ and the homepage note that say IDX is pending, and add IDX to the privacy notice.
-- [ ] Lacy to review: rewritten privacy notice; blog fine print about the draft article
+- [ ] Form email notification to lacy@geauxhomerealestate.com for every form (she clicks Confirm), then test a wish list and a home value request reaching her. Remove the test notification to Michael at launch.
+- [ ] Property search: embed Flexmls IDX SmartFrame (registration off) after ROAM/GBRAR approval. Spot is marked in search/advanced_search/. Keep the wish list (Lacy wants both). Also update the "Live home search is coming soon" notes (homepage, search page, area pages, /featured/) and add IDX to the privacy notice. Lacy wants browsing without registering.
+- [x] Lacy reviewed the privacy notice and site wording (Nov 23); blog draft note removed
 - [x] Remove the draft banner and footer links to /launch/
 - [ ] Search engines (launch day): robots.txt `Disallow: /` -> allow + sitemap line, and remove `<meta name="robots" content="noindex,nofollow">` from every page
+- [x] No analytics on the site (privacy notice says so). If any are added, update the notice.
 - [x] Redirects for old Real Geeks URLs (`_redirects`, covers all ~12,000 addresses in the old sitemap)
