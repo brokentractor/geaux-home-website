@@ -19,7 +19,7 @@ Broken Tractor (Michael) manages the site for Lacy; she does not have GitHub or 
 Every publish to the live site (a push to `main`) costs 15 Netlify credits. The free plan has 300 a month, and the whole site pauses if they run out. Builds of the `preview` branch are free.
 
 1. Work and commit on the `preview` branch, then push it.
-2. Check it at https://preview--geaux-home-website.netlify.app. Forms there are real: test messages email Lacy too.
+2. Check it at https://preview--geaux-home-website.netlify.app. Don't send forms from the preview: they may email Lacy. Test forms on the live site after a release.
 3. When a batch is ready, merge `preview` into `main` and push. That's the one paid publish.
 
 ## Before launch (target Tue Dec 8, 2026)
