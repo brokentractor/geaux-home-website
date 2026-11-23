@@ -15,6 +15,13 @@ Broken Tractor (Michael) manages the site for Lacy; she does not have GitHub or 
 - Source: exported from Lacy's ChatGPT draft, version 25 (2026-11-20).
 - No build step. Pages are `*/index.html`; shared files are in `assets/`.
 
+## Making changes (keeps Netlify credits low)
+Every publish to the live site (a push to `main`) costs 15 Netlify credits. The free plan has 300 a month, and the whole site pauses if they run out. Builds of the `preview` branch are free.
+
+1. Work and commit on the `preview` branch, then push it.
+2. Check it at https://preview--geaux-home-website.netlify.app. Forms there are real: test messages email Lacy too.
+3. When a batch is ready, merge `preview` into `main` and push. That's the one paid publish.
+
 ## Before launch (target Tue Dec 8, 2026)
 - [x] Forms send through Netlify Forms: `contact`, `wish-list`, `home-value`, `market-report`. Nothing a visitor types goes into the page address.
 - [x] Netlify form detection on
