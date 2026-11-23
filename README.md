@@ -13,4 +13,4 @@ Hosted on Netlify; every push to `main` publishes automatically.
 - [ ] Lacy to review: rewritten privacy notice; blog fine print about the draft article
 - [x] Remove the draft banner and footer links to /launch/
 - [ ] Search engines (launch day): robots.txt `Disallow: /` -> allow + sitemap line, and remove `<meta name="robots" content="noindex,nofollow">` from every page
-- [ ] Redirects for old Real Geeks URLs
+- [x] Redirects for old Real Geeks URLs (`_redirects`, covers all ~12,000 addresses in the old sitemap)

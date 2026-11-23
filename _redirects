@@ -1,0 +1,60 @@
+# Redirects from the old Real Geeks site (geauxhomerealestate.com) to the new pages.
+# Existing pages are always served as-is; these rules only catch old addresses with no matching page.
+# Rules run top to bottom; the first match wins.
+
+# Old Real Geeks pages
+/blog/local-real-estate/*                                  /blog/                                   301
+/rg-privacy                                                /privacy/                                301
+/rg-privacy/*                                              /privacy/                                301
+/rg-terms                                                  /privacy/                                301
+/rg-terms/*                                                /privacy/                                301
+/rg-accessibility                                          /accessibility/                          301
+/rg-accessibility/*                                        /accessibility/                          301
+/lacy-crouch                                               /lacy-crouch/                            301
+/member/*                                                  /                                        301
+
+# Old listing searches, map search and individual listing pages (often saved in emails)
+/search/details/*                                          /search/advanced_search/                 301
+/search/results/*                                          /search/advanced_search/                 301
+/search/refine/*                                           /search/advanced_search/                 301
+/map_search/*                                              /search/advanced_search/                 301
+/map_search                                                /search/advanced_search/                 301
+
+# Old area pages whose neighborhood or city has a new page (sub-pages like /homes-for-sale/ go to the main page)
+/listings/city/Baton-Rouge/*                               /listings/city/Baton-Rouge/              301
+/listings/city/Central/*                                   /listings/city/Central/                  301
+/listings/city/Denham-Springs/*                            /listings/city/Denham-Springs/           301
+/listings/city/Gonzales/*                                  /listings/city/Gonzales/                 301
+/listings/city/Plaquemine/*                                /listings/city/Plaquemine/               301
+/listings/city/Prairieville/*                              /listings/city/Prairieville/             301
+/listings/city/St-Francisville/*                           /listings/city/St-Francisville/          301
+/listings/city/Walker/*                                    /listings/city/Walker/                   301
+/listings/city/Zachary/*                                   /listings/city/Zachary/                  301
+/listings/subdivision/Bocage-Estates/*                     /listings/subdivision/Bocage-Estates/    301
+/listings/subdivision/Capital-Heights/*                    /listings/subdivision/Capital-Heights/   301
+/listings/subdivision/Country-Club-Of-Louisiana/*          /listings/subdivision/Country-Club-Of-Louisiana/ 301
+/listings/subdivision/Downtown/*                           /listings/subdivision/Downtown/          301
+/listings/subdivision/Garden-District/*                    /listings/subdivision/Garden-District/   301
+/listings/subdivision/Goodwood-Place/*                     /listings/subdivision/Goodwood-Place/    301
+/listings/subdivision/Historical-Disrict/*                 /listings/subdivision/Historical-Disrict/ 301
+/listings/subdivision/Jefferson-Place/*                    /listings/subdivision/Jefferson-Place/   301
+/listings/subdivision/Lakes-At-Highland-The/*              /listings/subdivision/Lakes-At-Highland-The/ 301
+/listings/subdivision/Lexington-Estates/*                  /listings/subdivision/Lexington-Estates/ 301
+/listings/subdivision/Long-Farm/*                          /listings/subdivision/Long-Farm/         301
+/listings/subdivision/Old-Goodwood-Place/*                 /listings/subdivision/Old-Goodwood-Place/ 301
+/listings/subdivision/Preserve-At-Harveston-The/*          /listings/subdivision/Preserve-At-Harveston-The/ 301
+/listings/subdivision/Rouzan-Tnd/*                         /listings/subdivision/Rouzan-Tnd/        301
+/listings/subdivision/Santa-Maria/*                        /listings/subdivision/Santa-Maria/       301
+/listings/subdivision/Settlement-At-Willow-Grove/*         /listings/subdivision/Settlement-At-Willow-Grove/ 301
+/listings/subdivision/Southdowns/*                         /listings/subdivision/Southdowns/        301
+/listings/subdivision/University-Acres/*                   /listings/subdivision/University-Acres/  301
+/listings/subdivision/University-Club-Plantation/*         /listings/subdivision/University-Club-Plantation/ 301
+/listings/subdivision/University-Club-South/*              /listings/subdivision/University-Club-South/ 301
+/listings/subdivision/Woodgate/*                           /listings/subdivision/Woodgate/          301
+
+# Old county pages
+/listings/county/Ascension/*                               /communities/ascension-parish/           301
+/listings/county/*                                         /communities/                            301
+
+# Every other old area page (about 10,000 auto-generated pages) goes to the neighborhoods page
+/listings/*                                                /communities/                            301
