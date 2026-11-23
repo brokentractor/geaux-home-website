@@ -6,3 +6,4 @@ Thumbs.db
 
 # Local notes (DNS backup, etc.). Never published.
 /_private/
+/.claude/

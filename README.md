@@ -7,8 +7,10 @@ Hosted on Netlify; every push to `main` publishes automatically.
 - No build step. Pages are `*/index.html`; shared files are in `assets/`.
 
 ## Before launch (target Tue Dec 8, 2026)
-- [ ] Forms: switch from email drafts (mailto) to Netlify Forms, notifications to lacy@geauxhomerealestate.com
-- [ ] Property search: embed Flexmls IDX SmartFrame (registration off) after ROAM/GBRAR approval
-- [ ] Remove the header link to /launch/ (internal page, not published)
-- [ ] robots.txt: change `Disallow: /` to allow indexing, and add the sitemap line
+- [x] Contact form sends through Netlify Forms (form name `contact`)
+- [ ] Netlify: enable form detection, then set the submission email to lacy@geauxhomerealestate.com (in her account)
+- [ ] Property search: embed Flexmls IDX SmartFrame (registration off) after ROAM/GBRAR approval. Spot is marked in search/advanced_search/. Also update the area pages, /featured/ and the homepage note that say IDX is pending, and add IDX to the privacy notice.
+- [ ] Lacy to review: rewritten privacy notice; blog fine print about the draft article
+- [x] Remove the draft banner and footer links to /launch/
+- [ ] Search engines (launch day): robots.txt `Disallow: /` -> allow + sitemap line, and remove `<meta name="robots" content="noindex,nofollow">` from every page
 - [ ] Redirects for old Real Geeks URLs
