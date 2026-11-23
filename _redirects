@@ -22,36 +22,36 @@
 
 # Sub-pages (like /homes-for-sale/) of areas that have a new page go to that page.
 # Netlify serves pages at lowercase addresses, so destinations are lowercase.
-/listings/city/Baton-Rouge/:sub                            /listings/city/baton-rouge/              301
-/listings/city/Central/:sub                                /listings/city/central/                  301
-/listings/city/Denham-Springs/:sub                         /listings/city/denham-springs/           301
-/listings/city/Gonzales/:sub                               /listings/city/gonzales/                 301
-/listings/city/Plaquemine/:sub                             /listings/city/plaquemine/               301
-/listings/city/Prairieville/:sub                           /listings/city/prairieville/             301
-/listings/city/St-Francisville/:sub                        /listings/city/st-francisville/          301
-/listings/city/Walker/:sub                                 /listings/city/walker/                   301
-/listings/city/Zachary/:sub                                /listings/city/zachary/                  301
-/listings/subdivision/Bocage-Estates/:sub                  /listings/subdivision/bocage-estates/    301
-/listings/subdivision/Capital-Heights/:sub                 /listings/subdivision/capital-heights/   301
-/listings/subdivision/Country-Club-Of-Louisiana/:sub       /listings/subdivision/country-club-of-louisiana/ 301
-/listings/subdivision/Downtown/:sub                        /listings/subdivision/downtown/          301
-/listings/subdivision/Garden-District/:sub                 /listings/subdivision/garden-district/   301
-/listings/subdivision/Goodwood-Place/:sub                  /listings/subdivision/goodwood-place/    301
-/listings/subdivision/Historical-Disrict/:sub              /listings/subdivision/historical-disrict/ 301
-/listings/subdivision/Jefferson-Place/:sub                 /listings/subdivision/jefferson-place/   301
-/listings/subdivision/Lakes-At-Highland-The/:sub           /listings/subdivision/lakes-at-highland-the/ 301
-/listings/subdivision/Lexington-Estates/:sub               /listings/subdivision/lexington-estates/ 301
-/listings/subdivision/Long-Farm/:sub                       /listings/subdivision/long-farm/         301
-/listings/subdivision/Old-Goodwood-Place/:sub              /listings/subdivision/old-goodwood-place/ 301
-/listings/subdivision/Preserve-At-Harveston-The/:sub       /listings/subdivision/preserve-at-harveston-the/ 301
-/listings/subdivision/Rouzan-Tnd/:sub                      /listings/subdivision/rouzan-tnd/        301
-/listings/subdivision/Santa-Maria/:sub                     /listings/subdivision/santa-maria/       301
-/listings/subdivision/Settlement-At-Willow-Grove/:sub      /listings/subdivision/settlement-at-willow-grove/ 301
-/listings/subdivision/Southdowns/:sub                      /listings/subdivision/southdowns/        301
-/listings/subdivision/University-Acres/:sub                /listings/subdivision/university-acres/  301
-/listings/subdivision/University-Club-Plantation/:sub      /listings/subdivision/university-club-plantation/ 301
-/listings/subdivision/University-Club-South/:sub           /listings/subdivision/university-club-south/ 301
-/listings/subdivision/Woodgate/:sub                        /listings/subdivision/woodgate/          301
+/listings/city/baton-rouge/:sub                            /listings/city/baton-rouge/              301
+/listings/city/central/:sub                                /listings/city/central/                  301
+/listings/city/denham-springs/:sub                         /listings/city/denham-springs/           301
+/listings/city/gonzales/:sub                               /listings/city/gonzales/                 301
+/listings/city/plaquemine/:sub                             /listings/city/plaquemine/               301
+/listings/city/prairieville/:sub                           /listings/city/prairieville/             301
+/listings/city/st-francisville/:sub                        /listings/city/st-francisville/          301
+/listings/city/walker/:sub                                 /listings/city/walker/                   301
+/listings/city/zachary/:sub                                /listings/city/zachary/                  301
+/listings/subdivision/bocage-estates/:sub                  /listings/subdivision/bocage-estates/    301
+/listings/subdivision/capital-heights/:sub                 /listings/subdivision/capital-heights/   301
+/listings/subdivision/country-club-of-louisiana/:sub       /listings/subdivision/country-club-of-louisiana/ 301
+/listings/subdivision/downtown/:sub                        /listings/subdivision/downtown/          301
+/listings/subdivision/garden-district/:sub                 /listings/subdivision/garden-district/   301
+/listings/subdivision/goodwood-place/:sub                  /listings/subdivision/goodwood-place/    301
+/listings/subdivision/historical-disrict/:sub              /listings/subdivision/historical-disrict/ 301
+/listings/subdivision/jefferson-place/:sub                 /listings/subdivision/jefferson-place/   301
+/listings/subdivision/lakes-at-highland-the/:sub           /listings/subdivision/lakes-at-highland-the/ 301
+/listings/subdivision/lexington-estates/:sub               /listings/subdivision/lexington-estates/ 301
+/listings/subdivision/long-farm/:sub                       /listings/subdivision/long-farm/         301
+/listings/subdivision/old-goodwood-place/:sub              /listings/subdivision/old-goodwood-place/ 301
+/listings/subdivision/preserve-at-harveston-the/:sub       /listings/subdivision/preserve-at-harveston-the/ 301
+/listings/subdivision/rouzan-tnd/:sub                      /listings/subdivision/rouzan-tnd/        301
+/listings/subdivision/santa-maria/:sub                     /listings/subdivision/santa-maria/       301
+/listings/subdivision/settlement-at-willow-grove/:sub      /listings/subdivision/settlement-at-willow-grove/ 301
+/listings/subdivision/southdowns/:sub                      /listings/subdivision/southdowns/        301
+/listings/subdivision/university-acres/:sub                /listings/subdivision/university-acres/  301
+/listings/subdivision/university-club-plantation/:sub      /listings/subdivision/university-club-plantation/ 301
+/listings/subdivision/university-club-south/:sub           /listings/subdivision/university-club-south/ 301
+/listings/subdivision/woodgate/:sub                        /listings/subdivision/woodgate/          301
 
 # Old county pages
 /listings/county/Ascension/*                               /communities/ascension-parish/           301
